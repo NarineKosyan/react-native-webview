@@ -155,8 +155,8 @@ public class RNCWebChromeClient extends WebChromeClient implements LifecycleEven
                 // androidPermission = Manifest.permission.RECORD_AUDIO;
                 continue;
             } else if (requestedResource.equals(PermissionRequest.RESOURCE_VIDEO_CAPTURE)) {
-                // androidPermission = Manifest.permission.CAMERA;
-                continue;
+                androidPermission = Manifest.permission.CAMERA;
+                // continue;
             } else if(requestedResource.equals(PermissionRequest.RESOURCE_PROTECTED_MEDIA_ID)) {
                 if (mAllowsProtectedMedia) {
                   grantedPermissions.add(requestedResource);
